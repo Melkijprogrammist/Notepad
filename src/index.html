@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Веб-приложение заметок</title>
+<link rel="stylesheet" href="../accents/css/style.css">
+</head>
+<body>
+  <h1>Мои заметки</h1>
+  <textarea id="noteText"></textarea>
+
+  <div id="toolbar">
+    <button onclick="saveNote()">Сохранить</button>
+    <button onclick="saveNoteAs()">Сохранить как</button>
+    <button onclick="deleteNote()">Удалить</button>
+    <button onclick="openFolder()">Открыть папку</button>
+    <button onclick="closeFolder()">Закрыть папку</button>
+
+    <div id="styleMenu">
+        <button onclick="applyStyle('italic')">Курсив</button>
+        <button onclick="applyStyle('bold')">Жирный</button>
+        <button onclick="applyStyle('highlight')">Подсветка</button>
+    </div>
+
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
